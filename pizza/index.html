@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pizza</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Kosugi&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+	</head>
+<body>
+	<div class="container bgBlack">
+		<!--Секція 1-->
+	<div class="coupon hide" id="coupons">
+		<div class="coupon__body">
+			<span class="coupon__closeBtn">x</span>
+			<div class="coupon__title">Get a discount on pizza</div>
+			<div class="coupon__number">
+			</div>
+			<div class="cupon__info"></div>
+		</div>
+	</div>
+	<header class="header">
+		<div class="header__logo">
+			<div class="logo__img">
+				<img src="./img/logo.png" alt="logo">
+			</div>
+			<div class="logo__text">
+				<img src="./img/mania.png" alt="">
+			</div>
+		</div>
+		<nav>
+			<ul class="header__menu">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#menu">Menu</a></li>
+				<li class="coupon__link"><a href="">Specials & Coupons</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="burger-menu" onclick="$('.burger-menu').toggleClass('active')">
+		<div class="burger-menu__wrapper">
+			<span class="burger-menu__item"></span>
+			<span class="burger-menu__item"></span>
+			<span class="burger-menu__item"></span>
+		</div>
+		<nav class="burger-menu__nav">
+			<ul class="nav">
+				<li class="nav__item">
+					<a href="#home">Home</a>
+				</li>
+				<li class="nav__item">
+					<a href="#menu">Menu</a>
+				</li>
+				<li class="nav__item">
+					<a href="#coupons">Specials & Coupons</a>
+				</li>
+				<li class="nav__item">
+					<a href="#contact">Contact Us</a>
+				</li>
+			</ul>
+		</nav>
+   </div>
+
+	<div class="hero-page" id="home">
+		<div class="hero-page__right">
+			<h1 class="hero-page__title">Pizza family</h1>
+			<p class="hero-page__text">people disappoint, <br>but pizza never does.
+			</p>
+			<div class="hero-page__search">
+				<img src="./img/Search-Bar.png" alt="">
+			</div>
+			<button class="hero-page__btn">Try now</button>
+		</div>
+		
+		<div class="hero-page__left">
+			<img src="./img/right.png" class="hero-page__img" alt="">
+		</div>
+	</div>
+	
+	<div class="time">
+		<div class="time__sun hide"><img src="img/Sun.png" alt=""></div>
+		<div class="time__moon"><img src="img/Moon.png" alt=""></div>
+	</div>
+    <!--Секція 2-->
+	<section class="section2" id="menu">
+		<h2 class="menu__title">Menu</h2>
+			<div class="menu">
+				<div class="menu__img">
+					<img src="./img/min-pizza.png" alt="" class="menu__img-img">
+				</div>
+				
+				<div class="menu__page">
+					<div class="menu__slice">
+						<div class="menu__ingredients">
+							<h4 class="menu__ingredients-title">Ingredients for pizza</h4>
+							<p class="menu__ingredients-item">Bacon.....................<span class="menu__ingredients-price">3 $</span></p>
+							<p class="menu__ingredients-item">Mushrooms.................<span class="menu__ingredients-price">2.5 $</span></p>
+							<p class="menu__ingredients-item">Cheese....................<span class="menu__ingredients-price">2 $</span></p>
+							<p class="menu__ingredients-item">Pepper....................<span class="menu__ingredients-price">1.5 $</span></p>
+						</div>
+						<div class="menu__ingredients">
+							<h4 class="menu__ingredients-title">Ingredients for pizza</h4>
+							<p class="menu__ingredients-item">Corn......................<span class="menu__ingredients-price">1.5 $</span></p>
+							<p class="menu__ingredients-item">Olives....................<span class="menu__ingredients-price">2 $</span></p>
+							<p class="menu__ingredients-item">Tomato....................<span class="menu__ingredients-price">2.5 $</span></p>
+							<p class="menu__ingredients-item">Pineapple.................<span class="menu__ingredients-price">3 $</span></p>
+						</div>
+					</div>
+					<div class="menu__gourmet">
+						<h4 class="menu__gourmet-title">Gourmet Pizza</h4>
+						<div class="menu__item">
+						<h5 class="menu__item-title">PIZZA 4 CHEESE<span class="menu__item-price">$ 25.00</span></h5>
+						<p class="menu__item-text"> mozzarella cheese, Dor Blue cheese, cheddar slice cheese, feta cheese, cream sauce.</p>
+						</div>
+						<div class="menu__item">
+							<h5 class="menu__item-title">PIZZA CARBONARA<span class="menu__item-price">$ 15.00</span></h5>
+							<p class="menu__item-text"> bacon, ham, mozzarella cheese, quail eggs, red onion, arugula, bechamel sauce.</p>
+						</div>
+						<div class="menu__item">
+							<h5 class="menu__item-title">PIZZA MARGARITA<span class="menu__item-price">$ 23.00</span></h5>
+							<p class="menu__item-text"> mozzarella cheese, tomatoes, Italian herbs, pesto sauce, tomato sauce.</p>
+						</div>
+						<div class="menu__item">
+							<h5 class="menu__item-title">HAWAIIAN PIZZA<span class="menu__item-price">   $ 35.00</span></h5>
+							<p class="menu__item-text">smoked chicken, mozzarella cheese, pineapple, cream sauce.</p>
+						</div>
+						<button class="menu__btn">Explore more</button>
+					</div>
+			    </div>
+		    </div>
+	</section>
+    <!--Секція 3-->
+	<section class="section3">
+		<div class="pizza-month">
+			<div class="pizza-month__hand">
+                <h4 class="pizza-month__title"><span class="pizza-month__span">Pizza</span> Of The Month</h4>
+				<h4 class="pizza-month__title">The Big <span class="pizza-month__span"> BIRD</span></h4>
+				<img src="./img/hands-taking-pizza 1.png" alt="" class="pizza-month__img">
+			</div>
+			<div class="pizza-month__line">
+			</div>
+			<div class="pizza-month__varieties">
+				<ul class="pizza-month__">
+					<li class="pizza-month__item">Meat Pizza</li>
+					<li class="pizza-month__item">Margarita Pizza</li>
+					<li class="pizza-month__item">Hawaiian Pizza</li>
+					<li class="pizza-month__item">Pepperoni Pizza</li>
+					<li class="pizza-month__item">Veggie Pizza</li>
+					<li class="pizza-month__item">Cheese Pizza</li>
+			    </ul>
+				<div class="pizza-month__btn">
+					<button class="pizza-month__btn1">Order online now</button>
+					<button class="pizza-month__btn2">See our menu</button>
+			    </div>
+			</div>
+		</div>
+	</section>
+	<!--Секція 4-->
+	<section class="section4" id="contact">
+		<div class="reservation">
+            <div class="reservation__peppercorns">
+				<img src="./img/peppercorns.png" alt="">
+			</div>
+			<div class="reservation__pepper">
+				<img src="./img/pepper.png" alt="">
+			</div>
+			<div class="reservation__condiment">
+				<img src="./img/condiment.png" alt="">
+			</div>
+			<div class="reservation__card">
+				<h5 class="reservation__title">Reservation</h5>
+				<p class="reservation__text">Book online or give us a call on +91 1111 222 333</p>
+				<p class="reservation__text">Between 9:30 am - 10:00 pm</p>
+				<ul class="reservation__item">
+                    <li>Name_ _ _ _ _ _ _ _ _ _ _ _ _ _ _<span class="reservation__span"></span></li>
+					<li>E-Mail_ _ _ _ _ _ _ _ _ _ _ _ _ _ _<span class="reservation__span"></span></li>
+					<li>People number_ _ _ _ _ _ _ _ _ _<span class="reservation__span"></span></li>
+					<li>Date & time_ _ _ _ _ _ _ _ _ _ _ _<span class="reservation__span"></span></li>
+				</ul>
+				<button class="reservation__btn">Send Mail</button>
+			</div>
+			<div class="reservation__lettuce">
+				<img src="./img/lettuce.png" alt="">
+			</div>
+		</div>
+	</section>
+    <!--Секція 5-->
+	<section class="section5">
+		<div class="footer">
+			<div class="accordion">
+				<div class="account">
+					<div class="account__logo">
+						<img src="./img/account.png" alt="">
+					</div>
+					<div class="account__info">
+						<div class="account__title">Account</div>
+						<div class="info__details hide">
+						<div class="account__text">To place your order now, log in to your existing account or sign up.</div>
+						<div class="account__btn">
+							<button class="account__btn1">Have an account? <br> <a href="Log in">Log in</a></button>
+							<button class="account__btn1">New to Mania? <br> <a href="Sign in">Sign in</a></button>
+						</div>
+						</div>
+					</div>
+				</div>
+				<div class="delivery">
+					<div class="delivery__logo">
+						<img src="./img/location.png" alt="">
+					</div>
+					<div class="account__info">
+						<div class="account__title">Delivery address</div>
+						<div class="info__details hide">
+						<div class="account__text">To place your order now, log in to your existing account or sign up.</div>
+						<div class="account__btn">
+							<button class="account__btn1">Have an account? <br> <a href="Log in">Log in</a></button>
+							<button class="account__btn1">New to Mania? <br> <a href="Sign in">Sign in</a></button>
+						</div>
+						</div>
+					</div>
+				</div>
+				<div class="payment">
+					<div class="payment__logo">
+						<img src="./img/payment.png" alt="">
+					</div>
+					<div class="account__info">
+						<div class="account__title">Payment</div>
+						<div class="info__details hide">
+						<div class="account__text">To place your order now, log in to your existing account or sign up.</div>
+						<div class="account__btn">
+							<button class="account__btn1">Have an account? <br> <a href="Log in">Log in</a></button>
+							<button class="account__btn1">New to Mania? <br> <a href="Sign in">Sign in</a></button>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form">
+				<div class="form__order">
+					<div class="header-form">
+						<div class="header-form__logo">
+							<img src="./img/min-pizza.png" alt="">
+						</div>
+						<div class="header-form__info">
+							<h6 class="header-form__title">Wow ! Pizza</h6>
+							<p class="header-form__text">Ordering a pizza</p>
+						</div>
+						</div>
+						<div class="header-order">
+						<form  action="sender.php" class="order" method="post">
+							<div class="order__title">Types of pizza</div>
+							<ul class="order__item">
+								<li><span class="order__removeItemBtn">-</span>PIZZA 4 CHEESE..............<span class="order__itemCost">25$</span><span class="order__addItemBtn">+</span></li>
+								<li><span class="order__removeItemBtn">-</span>PIZZA CARBONARA.......<span class="order__itemCost">15$</span><span class="order__addItemBtn">+</span></li>
+								<li><span class="order__removeItemBtn">-</span>PIZZA MARGARITA........<span class="order__itemCost">23$</span><span class="order__addItemBtn">+</span></li>
+								<li><span class="order__removeItemBtn">-</span>HAWAIIAN PIZZA............<span class="order__itemCost">35$</span><span class="order__addItemBtn">+</span></li>
+							</ul>
+                                <div class="order__ingredients ">
+										<div class="order__title">Ingredients for pizza</div>
+										 <ul class="order__item">
+                                            <li><span class="order__removeItemBtn">-</span>Bacon..............<span class="order__itemCost">3$</span><span class="order__addItemBtn">+</span></li>
+											<li><span class="order__removeItemBtn">-</span>Mushrooms.......<span class="order__itemCost">2.5$</span><span class="order__addItemBtn">+</span></li>
+											<li><span class="order__removeItemBtn">-</span>Cheese........<span class="order__itemCost">2$</span><span class="order__addItemBtn">+</span></li>
+											<li><span class="order__removeItemBtn">-</span>Pepper............<span class="order__itemCost">1.5$</span><span class="order__addItemBtn">+</span></li>
+										 </ul>
+								</div>
+						    <div><label for="">Coupon number: <input class="order__couponInp" type="text" placeholder="XXXX XXXX"></label> <input type="button" class="order__cupounBtn" value="check">
+							<div class="order__paid">To be paid: <div class="order__sum"></div>
+							<input type="hidden" class="sumSend" name="sumSend">$
+								</div>
+						<input type="button" class="order__button" value="order" name="order">
+						</form>
+						<!--<button class="order__button">ORDER</button>-->
+						</div>
+						<div class="header-form__img">
+							<img src="./img/pizza-slice .png" alt="">
+						</div>
+					</div>
+			</div>
+		</div>
+	</section>
+   </div>
+</div>
+	<script src="./js.main/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1095 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+.header{
+	display: flex;
+	position: sticky; 
+	overflow: hidden;
+	width: 100%;
+	height: 100px;
+	z-index: 9999;
+	top: 0;
+}
+@media screen and (max-width: 768px) {
+	.header {
+      display: none;
+	}
+}
+nav ul{
+	width: 100%; 
+	list-style-type: none;
+	font-size: 16px;
+    padding: 10px;
+}
+a{
+	text-decoration: none;
+	color: #FF8C42;
+	transition: 0.3s;
+	font-family: 'Quicksand';
+	font-weight: 400;
+    font-size: 24px;
+}
+a:hover {
+	color: #FF8C42;
+	cursor: pointer;
+  }
+
+.header__logo{
+	display: flex;
+	width: 207px;
+	height: 59px;
+	margin: 0px 300px 0px 115px; 
+	gap: 5;
+}
+
+.header__menu{
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	gap: 45px;
+}
+
+.coupon{
+	height: 100vh;
+	width: 100vw;
+	background: rgba(0, 0, 0, .5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+}
+.coupon__body{
+	height: 250px;
+	width: 250px;
+	background-color: rgb(72, 70, 70);
+	
+}
+.coupon__closeBtn{
+	right: 500px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.active, .coupon__closeBtn:hover{
+	color: #FF8C42;
+}
+.coupon__title{
+	color: #FFFFFF;
+	text-align: center;
+	font-family: 'Quicksand';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	padding: 10px 20px;
+}
+.coupon__number{
+	color: #FF8C42;
+	text-align: center;
+	font-family: 'Quicksand';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	padding-top: 50px;
+}
+.hide{
+	display: none;
+}
+.overflowYHidden{
+	overflow-y: hidden;
+}
+.order{
+	margin-top: 10px;
+}
+.time{
+	position: relative;
+}
+.bgBlack{
+	background: black;
+}
+.bgWhite{
+	background: white;
+}
+.transition03s{
+	transition: 0.3s;
+}
+.hero-page{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+
+}
+.hero-page__right{
+	text-align: center;
+}
+.hero-page__title{
+	color: #FF8C42;
+	font-family: 'Quicksand';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 96px;
+	line-height: 120px;
+	padding-bottom: 35px;
+}
+.hero-page__text{
+	color: #FF8C42;
+	font-family: 'Quicksand';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 45px;
+	display: flex;
+	align-items: flex-end;
+	text-transform: capitalize;
+    padding: 0px 0px 70px 130px;
+}
+
+.hero-page__search{
+	padding: 70px 80px; 
+	width: 509px;
+	height: 50px;
+}
+
+.hero-page__btn {
+	background: #FF8C42;
+	width: 191px;
+	height: 68px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-family: 'Quicksand';
+	font-weight: 400;
+	font-size: 24px;
+	padding: 20px 49px;
+	border: none;
+	transition: 0.3s;
+	cursor: pointer;
+	
+  }
+.hero-page__btn:hover {
+	background: #FF8C42;
+  }
+
+.hero-page__img{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}	
+@media screen and (max-width: 768px) {
+	.hero-page__left {
+		display: none;
+	}
+}
+@media screen and (max-width: 414px) {
+	.hero-page__left {
+		display: none;
+	}
+	.hero-page__title{
+		font-size: 60px;
+	}
+	.hero-page__text{
+		font-size: 30px;
+		padding: 0px 0px 30px 150px;
+	}
+	.hero-page__search img {
+		padding: 69px 80px;
+		width: 300px;
+		height: 40px;
+}
+}
+
+.section5{
+	overflow: hidden;
+	display: flex;
+	width: 100%;
+}
+.accordion{
+	display: flex;
+	display: inline;
+	width: 50%;
+	margin-top: 20px;
+	
+}
+.account__logo{
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.account__btn{
+	display: flex;
+	display: inline;
+	width: 142px;
+	height: 36px;
+	border-radius: 5px;
+	gap: 30px;
+}
+.account{
+	display: flex;
+	background-color: rgb(72, 70, 70);
+    margin-left: 70px;
+	box-shadow: 5px 5px 10px rgb(122, 120, 120);
+}
+
+.account__title{
+	color: #FFFFFF;
+	font-family: 'Quicksand';
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 60px;
+	letter-spacing: 0em;
+	cursor: pointer;
+
+}
+.active, .account__title:hover {
+    color: #FF8C42;
+}
+.account__text{
+	color: #FFFFFF;
+	padding-bottom: 20px;
+}
+.account__info{
+	padding-left: 20px;
+}
+.account__btn1{
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+.account__btn1 a{
+	font-size: 14px;
+}
+
+.delivery{
+	display: flex;
+	background-color:  rgb(72, 70, 70);
+    margin-left: 70px;
+	margin-top: 70px;
+	box-shadow: 5px 5px 10px rgb(122, 120, 120);
+}
+.delivery__logo{
+	cursor: pointer;
+}
+.delivery__title{
+	color: #FFFFFF;
+	font-family: 'Quicksand';
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 60px;
+	letter-spacing: 0em;
+	padding-left: 20px;
+}
+.payment{
+	display: flex;
+	background-color:  rgb(72, 70, 70);
+    margin-left: 70px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	box-shadow: 5px 5px 10px rgb(122, 120, 120);
+}
+.payment__logo{
+	cursor: pointer;
+}
+.payment__title{
+	color: #FFFFFF;
+	font-family: 'Quicksand';
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 60px;
+	letter-spacing: 0em;
+	padding-left: 20px;
+}
+.form{
+	width: 50%;
+    margin-left: 70px;
+}
+.order ul{
+	list-style-type: none; 
+}
+.form__order{
+	width: 465px;
+	height: 775px;
+	background:  rgb(72, 70, 70);;
+	border-width: 2px 0px 0px 2px;
+	border-style: solid;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px rgb(122, 120, 120);
+	margin: 10px 30px 60px 30px;
+}
+.header-form{
+	display: flex;
+	color: #FFFFFF;
+}
+.header-form__logo{
+	padding: 20px 0 0 20px;
+}
+.header-form__info{
+	padding: 40px 10px 0 30px;
+}
+.header-form__title{
+	font-family: 'Quicksand';
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+
+.section2{
+	width: 100%;
+	overflow: hidden;
+}
+.menu{
+	display: flex;
+	position: relative;
+	justify-content: space-evenly;
+	
+}
+.menu__title{
+	font-family: 'Kaushan Script';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 152px;
+	line-height: 221px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.04em;
+	text-transform: capitalize;
+	color: #FF8C42;
+	padding: 25px 300px ;
+}
+
+.menu__page{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.menu__img-img{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    left: -250px;
+    top: -25px;
+}
+
+.menu__ingredients{
+	color: #7B3000;
+	padding: 0px 20px 0px 60px;
+	
+}
+.menu__ingredients-title{
+	font-family: 'Kosugi';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	text-align: center;
+    padding-bottom: 30px;
+}
+.menu__ingredients-item{
+	font-family: 'Kosugi';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 30px;
+	padding: 5px 0px 5px 0px;
+}
+.menu__ingredients-price{
+	padding-left: 10px;
+}
+
+.menu__gourmet{
+	color: #7B3000;
+	padding: 0px 10px 0px 90px;
+}
+@media screen and (max-width: 768px) {
+	.menu__title {
+		padding: 20px 180px;
+		font-size: 145px;
+	}
+	.menu__page {
+		flex-direction: column;
+	}
+	.menu__img-img {
+		display: none;
+	}
+	.menu__ingredients {
+		padding: 0px 20px 0px 40px;
+	}
+	.menu__gourmet {
+		padding: 0px 10px 0px 20px;
+	}
+	.menu__gourmet-title{
+		padding: 40px 0px 20px 0px;
+	}
+	.menu__ingredients-title{
+       padding: 30px 0px 0px 20px;
+	}
+
+}
+
+.menu__gourmet-title{
+	font-family: 'Kosugi';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 48px;
+	text-align: center;
+    padding-bottom: 20px;
+}
+.menu__btn{
+	background: #FF8C42;
+	width: 191px;
+	height: 68px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-family: 'Quicksand';
+	font-weight: 400;
+	font-size: 20px;
+	padding: 15px 49px 30px;
+	border: none;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.menu__item{
+	padding: 20px 0px;
+}
+
+.menu__item-title{
+	font-family: 'Kosugi';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 32px;
+}
+.menu__item-price{
+	padding-left: 80px;
+}
+.menu__item-text{
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 20px;
+}
+@media screen and (max-width: 768px) {
+	.menu__item-text{
+		font-size: 18px;
+		font-weight: 100;
+		line-height: 20px;
+	}
+}
+@media screen and (max-width: 414px) {
+	.menu__title {
+		padding: 20px 70px;
+		font-size: 110px;
+	}
+	.menu__ingredients-title {
+		padding: 27px 0px 0px 0px;
+		font-size: 36px;
+	}
+	.menu__ingredients-item {
+		font-weight: 200;
+		font-size: 22px;
+		line-height: 30px;
+    }
+	.menu__gourmet-title {
+		font-size: 36px;
+	}
+	.menu__item-title {
+		font-weight: 200;
+		font-size: 26px;
+		line-height: 30px;
+	}
+	.menu__item-text {
+		font-size: 16px;
+	}
+}
+.section3{
+	overflow: hidden;
+}
+.pizza-month{
+	display: flex;
+	position: relative;
+	padding-top: 100px;
+}
+.pizza-month__title{
+	font-family: 'Quicksand';
+	font-size: 64px;
+	font-weight: 400;
+	line-height: 80px;
+	letter-spacing: 0.085em;
+	text-align: center;
+	color: #7B3000;
+}
+.pizza-month__line{
+	position: absolute;
+	width: 1000px;
+	height: 0px;
+	left: 480px;
+	top: 530px;
+	border: 10px solid #FF8C42;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	transform: rotate(110deg);
+}
+.pizza-month__span{
+	color: #FF8C42;
+}
+
+.pizza-month__varieties{ 
+	color: #7B3000;
+	position: absolute;
+	right: 126px;
+	bottom: 318px
+} 
+.pizza-month__item{
+	font-family: 'Quicksand';
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 45px;
+	letter-spacing: 0.085em;
+	text-align: left;
+	padding: 10px;
+}
+.pizza-month__btn{
+	margin-top: 80px;
+}
+.pizza-month__btn1{
+	background: #FF8C42;
+	width: 180px;
+	height: 60px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-family: 'Quicksand';
+	font-weight: 400;
+	font-size: 18px;
+	padding: 7px 40px;
+	border: none;
+	transition: 0.3s;
+	cursor: pointer;
+
+}
+.pizza-month__btn1:hover{
+	background: #FF8C42;
+}
+.pizza-month__btn2{
+	background: #FF8C42;
+	width: 170px;
+	height: 60px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-family: 'Quicksand';
+	font-weight: 400;
+	font-size: 18px;
+	padding: 10px 49px;
+	border: none;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.pizza-month__btn2:hover{
+	background: #FF8C42;
+}
+@media screen and (max-width: 768px) {
+	.pizza-month__title {
+		font-size: 50px;
+	}
+	.pizza-month{
+		padding: 20px 0px 30px 50px;
+	}
+	
+	.pizza-month__item{
+		font-size: 28px;
+		font-weight: 400;
+		line-height: 28px;
+		padding: 10px
+	}
+	.pizza-month__line{
+		display: none;
+	}
+	.pizza-month__btn{
+		padding-top: 50px;
+	}
+}
+@media screen and (max-width: 414px) {
+	.pizza-month{
+	padding: 20px 0px 30px 1px;
+	}
+	.pizza-month__title {
+		font-size: 32px;
+		line-height: 56px;
+		padding-right: 481px
+	}
+	.pizza-month__line {
+		display: none;
+	}
+	.pizza-month__item {
+		font-size: 22px;
+		font-weight: 200;
+		line-height: 22px;
+		padding: 8px;
+		text-align: center;
+	}
+	.pizza-month__img img{
+		width: 25%;
+	}
+	.pizza-month__btn {
+		padding-top: 27px;
+	}
+	.pizza-month__btn1 {
+		margin: 0px 0px 0px 100px;
+	}
+	.pizza-month__btn2 {
+		margin: 0px 0px 20px 100px;
+	}
+}
+
+.section4{
+	overflow: hidden;
+}
+.reservation{
+	display: flex;
+	position: relative;
+	padding: 30px 0px 30px 0px;
+	
+}
+.reservation__peppercorns img{
+	height: 900px;
+	width: 550px;
+}
+.reservation__pepper {
+	position: absolute;
+	width: 531px;
+	height: 822px;
+	right: 650px;
+	top: -120px;
+	transform: rotate(0.78deg);
+}
+.reservation__condiment {
+	position: absolute;
+	width: 550px;
+	height: 550px;
+	left: 400px;
+	bottom: -120px;
+}
+.reservation__card{
+	position: absolute;
+	right: 100px;
+	bottom: 100px;
+	box-sizing: border-box;
+	width: 500px;
+	height: 800px;
+	background-color:  rgba(56, 54, 54, 0.5);
+	border-width: 3px 1px 1px 3px;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0.5); 
+	box-shadow: 5px 5px 10px rgb(122, 120, 120);
+	backdrop-filter: blur(2px);
+	border-radius: 10px;
+	
+}
+.reservation__lettuce img{
+	position: absolute;
+	width: 471px;
+	height: 351.12px;
+	right: 0px;
+	bottom: 20px;
+	transform: rotate(3.9deg);
+}
+.reservation__card{
+	color: #fff;
+	z-index: 3;
+}
+.reservation__card ul{
+	list-style-type: none;
+}
+.reservation__title{
+	font-family: 'Quicksand';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 50px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.085em;
+	text-transform: uppercase;
+	padding: 30px 0px 20px 0px;
+}
+.reservation__text{
+	font-family: 'Quicksand';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 18px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.085em;
+	text-transform: capitalize;
+}
+.reservation__item{
+	font-family: 'Quicksand';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 21px;
+	line-height: 50px;
+	align-items: center;
+	text-transform: capitalize;
+	padding: 150px 0px 0px 50px;
+}
+
+.reservation__btn{
+	background: #FF8C42;
+	width: 180px;
+	height: 60px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-family: 'Quicksand';
+	font-weight: 400;
+	font-size: 18px;
+	padding: 7px 40px;
+	border: none;
+	transition: 0.3s;
+	cursor: pointer;
+	margin: 70px 0px 80px 120px;
+}
+@media screen and (max-width: 768px) {
+	.reservation__lettuce img{
+		right: 25px;
+	    bottom: 20px;
+	}
+	.reservation__condiment{
+      display: none;
+	}
+}
+@media screen and (max-width: 414px) {
+	.reservation__peppercorns img{
+		height: 400px;
+		width: 250px;
+	}
+	.reservation__card{
+		right: 5px;
+		width: 405px;
+		height: 500px;
+	}
+	.reservation__title {
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 35px;
+		padding: 134px 0px 20px 0px;
+	}
+	.reservation__lettuce img{
+		width: 445px;
+        height: 300px
+	}
+	.reservation__item {
+		font-weight: 200;
+		font-size: 21px;
+		line-height: 25px;
+		padding: 66px 0px 0px 40px
+	}
+	.reservation__item li {
+		font-size: 21px;
+	}
+	.reservation__btn {
+		margin: 0px 0px 90px 120px;
+	}
+}
+
+.footer{
+	display: flex;
+	width: 100%; 
+	position: relative;
+	padding-top: 50px;
+}
+
+.accordion{
+	display: flex;
+	display: inline;
+	width: 50%;
+	margin-top: 20px;
+}
+.account__logo{
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.account__btn{
+	display: flex;
+	display: inline;
+	width: 142px;
+	height: 36px;
+	border-radius: 5px;
+	gap: 30px;
+}
+.account{
+	display: flex;
+	background-color: rgb(72, 70, 70);
+    margin-left: 70px;
+	box-shadow: 5px 5px 10px rgb(122, 120, 120);
+}
+.account__title{
+	color: #FFFFFF;
+	font-family: 'Quicksand';
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 60px;
+	letter-spacing: 0em;
+	cursor: pointer;
+}
+.active, .account__title:hover {
+    color: #FF8C42;
+}
+.account__text{
+	color: #FFFFFF;
+	padding-bottom: 20px;
+}
+.account__info{
+	padding-left: 20px;
+	overflow-x: hidden; 
+}
+.account__btn1{
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+.account__btn1 a{
+	font-size: 14px;
+}
+
+.delivery{
+	display: flex;
+	background-color:  rgb(72, 70, 70);
+    margin-left: 70px;
+	margin-top: 70px;
+	box-shadow: 5px 5px 10px rgb(122, 120, 120);
+}
+.delivery__logo{
+	cursor: pointer;
+}
+.delivery__title{
+	color: #FFFFFF;
+	font-family: 'Quicksand';
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 60px;
+	letter-spacing: 0em;
+	padding-left: 20px;
+}
+.payment{
+	display: flex;
+	background-color:  rgb(72, 70, 70);
+    margin-left: 70px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	box-shadow: 5px 5px 10px rgb(122, 120, 120);
+}
+.payment__logo{
+	cursor: pointer;
+}
+.payment__title{
+	color: #FFFFFF;
+	font-family: 'Quicksand';
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 60px;
+	letter-spacing: 0em;
+	padding-left: 20px;
+}
+.form{
+	width: 50%;
+    margin-left: 70px;
+}
+.order ul{
+	list-style-type: none; 
+}
+.form__order{
+	width: 465px;
+	height: 775px;
+	background:  rgb(72, 70, 70);
+	border-width: 2px 0px 0px 2px;
+	border-style: solid;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px rgb(122, 120, 120);
+	margin: 10px 30px 60px 30px;
+}
+.header-form__img img{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	right: 110px;
+	top: 600px;
+}
+.header-order{
+	color: #FFFFFF;
+	padding: 0px 0px 0px 40px;
+}
+.order__title{
+	font-family: 'Quicksand';
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 0em;
+	padding-top: 0px;
+	text-align: center;
+}
+.order__item{
+	color: #FF8C42;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.order__removeItemBtn{
+	padding-right: 30px;
+	color: #FFFFFF;
+}
+.order__addItemBtn{
+	padding-left: 30px;
+	color: #FFFFFF;
+}
+.order__itemCost{
+	padding-left: 20px;
+	color: #019310;
+}
+.order__cupounBtn{
+	color: #fff;
+	background: #FF8C42;
+	width: 70px;
+	height: 30px;
+}
+.order__paid{	
+	font-family: 'Quicksand';
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: 0em;
+	padding: 30px 0px 30px 0px;
+	color: #FF8C42;
+	border: 2px solid #fff;
+	margin: 30px;
+	text-align: center;
+}
+.order__sum{
+	color: #019310;
+}
+.order__button{
+		background: #FF8C42;
+		width: 170px;
+		height: 50px;
+		border-radius: 5px;
+		color: #FFFFFF;
+		font-family: 'Quicksand';
+		font-weight: 400;
+		font-size: 18px;
+		padding: 7px 40px;
+		border: none;
+		transition: 0.3s;
+		cursor: pointer;
+		margin-left: 100px;
+}
+@media screen and (max-width: 768px) {
+	.footer{
+		flex-direction: column;
+	}
+	.accordion{
+      width: 100%;
+	}
+	.header-form__img img{
+		width: 200px;
+		height: 200px;
+		right: 130px;
+		top: 1080px;
+	}
+	.payment {
+		margin-left: 0px;
+    }
+    .delivery{ 
+		margin-left: 0px;
+	}
+	.account{ 
+		margin-left: 0px;
+	}
+}
+@media screen and (max-width: 414px) {
+	.form {
+		margin-left: 7px;
+	}
+	.form__order {
+		width: 377px;
+		height: 759px;
+		margin: 10px 30px 60px 16px;
+	}
+	.header-form__img img {
+		display: none;
+	}
+	.header-order {
+		padding: 0px 0px 0px -12px;
+	}
+}
+.burger-menu {
+	display: none;
+	position: relative;
+  }
+  .burger-menu__wrapper {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	position: relative;
+	z-index: 6;
+  }
+  .burger-menu__nav {
+	position: fixed;
+	top: -100%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(72, 70, 70, 0.85);
+	z-index: 5;
+	transition: 0.5s;
+  }
+  .burger-menu__nav .nav {
+	display: flex;
+	flex-direction: column;
+	padding: 50px 0px 0px 170px;
+	
+  }
+  .burger-menu__item {
+	background: #FF8C42;
+	height: 2px;
+	width: 100%;
+	
+  }
+  @media screen and (max-width: 768px) {
+	.burger-menu {
+	  display: flex;
+	}
+  }
+  .burger-menu.active {
+	display: block;
+	right: 100px;
+	align-items: center;
+  }
+  .burger-menu.active .burger-menu__nav {
+	top: 0%;
+  }
+  .burger-menu.active .burger-menu__wrapper {
+	justify-content: center;
+	align-items: center;
+  }
+  .burger-menu.active .burger-menu__item:first-child {
+	transform: rotate(45deg);
+	margin-bottom: -2px;
+  }
+  .burger-menu.active .burger-menu__item:nth-child(3) {
+	transform: rotate(-45deg);
+  }
+  .burger-menu.active .burger-menu__item:nth-child(2) {
+	display: none;
+  }
+  .nav__item{
+	padding-bottom: 10px;
+  }
+  
+
+
+
+
+
+
